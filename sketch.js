@@ -13,16 +13,16 @@ function setup() {
     foodStock=database.ref("Food");
     foodStock.on("value",readStock)
 
-    dog=createSprite(250,300,50,50);
+    dog=createSprite(250,390,50,50);
     dog.addImage(dogImg);
-    dog.scale=0.3
+    dog.scale=0.25;
     
     foodObj=new Food();
-    feed=createButton("feed the dog");
-    feed.position(525,95);
+    feed=createButton("FEED THE DOG");
+    feed.position(505,95);
     feed.mousePressed(feedDog);
-    addFood=createButton("addFood");
-    addFood.position(790,95);
+    addFood=createButton("ADD FOOD");
+    addFood.position(620,95);
     addFood.mousePressed(addFoods);
 
 }
